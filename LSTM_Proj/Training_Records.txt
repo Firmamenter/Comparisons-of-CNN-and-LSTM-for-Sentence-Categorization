@@ -1,0 +1,613 @@
+Num of words:  18344
+
+Training Records
+
+(underfitting: larger batch_size)
+1.lr = 0.01, multiply by 0.1 every 10 epochs; epochs 10; embedding_dim = 100; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 32
+[Epoch:   0/ 10] Training Loss: 0.022, Training Acc: 0.503
+[Epoch:   1/ 10] Training Loss: 0.022, Training Acc: 0.511
+[Epoch:   2/ 10] Training Loss: 0.022, Training Acc: 0.514
+[Epoch:   3/ 10] Training Loss: 0.022, Training Acc: 0.519
+[Epoch:   4/ 10] Training Loss: 0.022, Training Acc: 0.518
+[Epoch:   5/ 10] Training Loss: 0.022, Training Acc: 0.526
+[Epoch:   6/ 10] Training Loss: 0.022, Training Acc: 0.527
+[Epoch:   7/ 10] Training Loss: 0.022, Training Acc: 0.528
+[Epoch:   8/ 10] Training Loss: 0.022, Training Acc: 0.535
+[Epoch:   9/ 10] Training Loss: 0.022, Training Acc: 0.535
+
+(better but still underfitting: smaller batch_size, small lr)
+2.lr = 0.01, multiply by 0.1 every 10 epochs; epochs 30; embedding_dim = 100; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 5
+[Epoch:   0/ 30] Training Loss: 0.139, Training Acc: 0.508
+[Epoch:   1/ 30] Training Loss: 0.138, Training Acc: 0.527
+[Epoch:   2/ 30] Training Loss: 0.138, Training Acc: 0.532
+[Epoch:   3/ 30] Training Loss: 0.137, Training Acc: 0.538
+[Epoch:   4/ 30] Training Loss: 0.137, Training Acc: 0.547
+[Epoch:   5/ 30] Training Loss: 0.136, Training Acc: 0.563
+[Epoch:   6/ 30] Training Loss: 0.135, Training Acc: 0.567
+[Epoch:   7/ 30] Training Loss: 0.134, Training Acc: 0.582
+[Epoch:   8/ 30] Training Loss: 0.132, Training Acc: 0.593
+[Epoch:   9/ 30] Training Loss: 0.131, Training Acc: 0.607
+[Epoch:  10/ 30] Training Loss: 0.128, Training Acc: 0.639
+[Epoch:  11/ 30] Training Loss: 0.127, Training Acc: 0.641
+[Epoch:  12/ 30] Training Loss: 0.127, Training Acc: 0.644
+[Epoch:  13/ 30] Training Loss: 0.127, Training Acc: 0.646
+[Epoch:  14/ 30] Training Loss: 0.126, Training Acc: 0.649
+[Epoch:  15/ 30] Training Loss: 0.126, Training Acc: 0.651
+[Epoch:  16/ 30] Training Loss: 0.125, Training Acc: 0.655
+[Epoch:  17/ 30] Training Loss: 0.125, Training Acc: 0.654
+[Epoch:  18/ 30] Training Loss: 0.125, Training Acc: 0.660
+[Epoch:  19/ 30] Training Loss: 0.124, Training Acc: 0.663
+[Epoch:  20/ 30] Training Loss: 0.124, Training Acc: 0.665
+[Epoch:  21/ 30] Training Loss: 0.123, Training Acc: 0.668
+[Epoch:  22/ 30] Training Loss: 0.123, Training Acc: 0.668
+[Epoch:  23/ 30] Training Loss: 0.123, Training Acc: 0.667
+[Epoch:  24/ 30] Training Loss: 0.123, Training Acc: 0.668
+[Epoch:  25/ 30] Training Loss: 0.123, Training Acc: 0.669
+[Epoch:  26/ 30] Training Loss: 0.123, Training Acc: 0.668
+[Epoch:  27/ 30] Training Loss: 0.123, Training Acc: 0.669
+[Epoch:  28/ 30] Training Loss: 0.123, Training Acc: 0.668
+[Epoch:  29/ 30] Training Loss: 0.123, Training Acc: 0.669
+
+((better: larger lr)
+3.lr = 0.01; epochs 30; embedding_dim = 100; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/ 30] Training Loss: 0.174, Training Acc: 0.509
+[Epoch:   1/ 30] Training Loss: 0.173, Training Acc: 0.524
+[Epoch:   2/ 30] Training Loss: 0.172, Training Acc: 0.542
+[Epoch:   3/ 30] Training Loss: 0.171, Training Acc: 0.543
+[Epoch:   4/ 30] Training Loss: 0.170, Training Acc: 0.557
+[Epoch:   5/ 30] Training Loss: 0.169, Training Acc: 0.564
+[Epoch:   6/ 30] Training Loss: 0.168, Training Acc: 0.577
+[Epoch:   7/ 30] Training Loss: 0.165, Training Acc: 0.598
+[Epoch:   8/ 30] Training Loss: 0.162, Training Acc: 0.617
+[Epoch:   9/ 30] Training Loss: 0.158, Training Acc: 0.640
+[Epoch:  10/ 30] Training Loss: 0.153, Training Acc: 0.665
+[Epoch:  11/ 30] Training Loss: 0.147, Training Acc: 0.688
+[Epoch:  12/ 30] Training Loss: 0.140, Training Acc: 0.705
+[Epoch:  13/ 30] Training Loss: 0.133, Training Acc: 0.734
+[Epoch:  14/ 30] Training Loss: 0.126, Training Acc: 0.750
+[Epoch:  15/ 30] Training Loss: 0.119, Training Acc: 0.771
+[Epoch:  16/ 30] Training Loss: 0.111, Training Acc: 0.793
+[Epoch:  17/ 30] Training Loss: 0.104, Training Acc: 0.812
+[Epoch:  18/ 30] Training Loss: 0.095, Training Acc: 0.829
+[Epoch:  19/ 30] Training Loss: 0.088, Training Acc: 0.847
+[Epoch:  20/ 30] Training Loss: 0.080, Training Acc: 0.864
+[Epoch:  21/ 30] Training Loss: 0.073, Training Acc: 0.881
+[Epoch:  22/ 30] Training Loss: 0.065, Training Acc: 0.894
+[Epoch:  23/ 30] Training Loss: 0.058, Training Acc: 0.909
+[Epoch:  24/ 30] Training Loss: 0.052, Training Acc: 0.922
+[Epoch:  25/ 30] Training Loss: 0.046, Training Acc: 0.932
+[Epoch:  26/ 30] Training Loss: 0.038, Training Acc: 0.947
+[Epoch:  27/ 30] Training Loss: 0.033, Training Acc: 0.956
+[Epoch:  28/ 30] Training Loss: 0.031, Training Acc: 0.959
+[Epoch:  29/ 30] Training Loss: 0.024, Training Acc: 0.971)
+
+(Add test data)
+4.lr = 0.01; epochs 30; embedding_dim = 100; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.174, Testing Loss: 0.174, Training Acc: 0.510, Testing Acc: 0.519
+[Epoch:   1/100] Training Loss: 0.173, Testing Loss: 0.174, Training Acc: 0.527, Testing Acc: 0.533
+[Epoch:   2/100] Training Loss: 0.172, Testing Loss: 0.174, Training Acc: 0.531, Testing Acc: 0.524
+[Epoch:   3/100] Training Loss: 0.172, Testing Loss: 0.173, Training Acc: 0.537, Testing Acc: 0.534
+[Epoch:   4/100] Training Loss: 0.171, Testing Loss: 0.173, Training Acc: 0.547, Testing Acc: 0.539
+[Epoch:   5/100] Training Loss: 0.170, Testing Loss: 0.173, Training Acc: 0.564, Testing Acc: 0.545
+[Epoch:   6/100] Training Loss: 0.169, Testing Loss: 0.173, Training Acc: 0.567, Testing Acc: 0.542
+[Epoch:   7/100] Training Loss: 0.167, Testing Loss: 0.174, Training Acc: 0.579, Testing Acc: 0.544
+[Epoch:   8/100] Training Loss: 0.166, Testing Loss: 0.172, Training Acc: 0.590, Testing Acc: 0.559
+[Epoch:   9/100] Training Loss: 0.163, Testing Loss: 0.173, Training Acc: 0.604, Testing Acc: 0.566
+[Epoch:  10/100] Training Loss: 0.160, Testing Loss: 0.172, Training Acc: 0.628, Testing Acc: 0.568
+[Epoch:  11/100] Training Loss: 0.155, Testing Loss: 0.168, Training Acc: 0.653, Testing Acc: 0.607
+[Epoch:  12/100] Training Loss: 0.148, Testing Loss: 0.166, Training Acc: 0.685, Testing Acc: 0.606
+[Epoch:  13/100] Training Loss: 0.141, Testing Loss: 0.163, Training Acc: 0.708, Testing Acc: 0.634
+[Epoch:  14/100] Training Loss: 0.133, Testing Loss: 0.161, Training Acc: 0.731, Testing Acc: 0.661
+[Epoch:  15/100] Training Loss: 0.125, Testing Loss: 0.161, Training Acc: 0.754, Testing Acc: 0.647
+[Epoch:  16/100] Training Loss: 0.117, Testing Loss: 0.161, Training Acc: 0.778, Testing Acc: 0.667
+[Epoch:  17/100] Training Loss: 0.108, Testing Loss: 0.175, Training Acc: 0.801, Testing Acc: 0.646
+[Epoch:  18/100] Training Loss: 0.100, Testing Loss: 0.173, Training Acc: 0.820, Testing Acc: 0.653
+[Epoch:  19/100] Training Loss: 0.091, Testing Loss: 0.169, Training Acc: 0.840, Testing Acc: 0.665
+[Epoch:  20/100] Training Loss: 0.083, Testing Loss: 0.177, Training Acc: 0.858, Testing Acc: 0.666
+[Epoch:  21/100] Training Loss: 0.074, Testing Loss: 0.182, Training Acc: 0.874, Testing Acc: 0.673
+[Epoch:  22/100] Training Loss: 0.066, Testing Loss: 0.202, Training Acc: 0.891, Testing Acc: 0.678
+[Epoch:  23/100] Training Loss: 0.057, Testing Loss: 0.220, Training Acc: 0.909, Testing Acc: 0.662
+[Epoch:  24/100] Training Loss: 0.050, Testing Loss: 0.226, Training Acc: 0.925, Testing Acc: 0.676
+[Epoch:  25/100] Training Loss: 0.044, Testing Loss: 0.240, Training Acc: 0.938, Testing Acc: 0.659
+[Epoch:  26/100] Training Loss: 0.037, Testing Loss: 0.258, Training Acc: 0.947, Testing Acc: 0.657
+[Epoch:  27/100] Training Loss: 0.030, Testing Loss: 0.273, Training Acc: 0.962, Testing Acc: 0.649
+[Epoch:  28/100] Training Loss: 0.026, Testing Loss: 0.274, Training Acc: 0.971, Testing Acc: 0.656
+[Epoch:  29/100] Training Loss: 0.022, Testing Loss: 0.296, Training Acc: 0.973, Testing Acc: 0.667
+[Epoch:  30/100] Training Loss: 0.018, Testing Loss: 0.321, Training Acc: 0.981, Testing Acc: 0.672
+[Epoch:  31/100] Training Loss: 0.015, Testing Loss: 0.358, Training Acc: 0.985, Testing Acc: 0.673
+[Epoch:  32/100] Training Loss: 0.013, Testing Loss: 0.355, Training Acc: 0.988, Testing Acc: 0.654
+[Epoch:  33/100] Training Loss: 0.009, Testing Loss: 0.361, Training Acc: 0.994, Testing Acc: 0.667
+[Epoch:  34/100] Training Loss: 0.009, Testing Loss: 0.393, Training Acc: 0.993, Testing Acc: 0.654
+[Epoch:  35/100] Training Loss: 0.008, Testing Loss: 0.379, Training Acc: 0.996, Testing Acc: 0.661
+[Epoch:  36/100] Training Loss: 0.008, Testing Loss: 0.359, Training Acc: 0.993, Testing Acc: 0.678
+[Epoch:  37/100] Training Loss: 0.007, Testing Loss: 0.386, Training Acc: 0.995, Testing Acc: 0.668
+[Epoch:  38/100] Training Loss: 0.005, Testing Loss: 0.399, Training Acc: 0.997, Testing Acc: 0.669
+[Epoch:  39/100] Training Loss: 0.006, Testing Loss: 0.432, Training Acc: 0.996, Testing Acc: 0.679
+[Epoch:  40/100] Training Loss: 0.003, Testing Loss: 0.458, Training Acc: 0.999, Testing Acc: 0.668
+[Epoch:  41/100] Training Loss: 0.001, Testing Loss: 0.479, Training Acc: 1.000, Testing Acc: 0.665
+[Epoch:  42/100] Training Loss: 0.001, Testing Loss: 0.503, Training Acc: 1.000, Testing Acc: 0.673
+[Epoch:  43/100] Training Loss: 0.001, Testing Loss: 0.521, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  44/100] Training Loss: 0.001, Testing Loss: 0.535, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  45/100] Training Loss: 0.001, Testing Loss: 0.549, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  46/100] Training Loss: 0.001, Testing Loss: 0.558, Training Acc: 1.000, Testing Acc: 0.676
+[Epoch:  47/100] Training Loss: 0.001, Testing Loss: 0.570, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  48/100] Training Loss: 0.001, Testing Loss: 0.577, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  49/100] Training Loss: 0.000, Testing Loss: 0.586, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  50/100] Training Loss: 0.000, Testing Loss: 0.597, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  51/100] Training Loss: 0.000, Testing Loss: 0.605, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  52/100] Training Loss: 0.000, Testing Loss: 0.614, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  53/100] Training Loss: 0.000, Testing Loss: 0.621, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  54/100] Training Loss: 0.000, Testing Loss: 0.627, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  55/100] Training Loss: 0.000, Testing Loss: 0.635, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  56/100] Training Loss: 0.000, Testing Loss: 0.639, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  57/100] Training Loss: 0.000, Testing Loss: 0.647, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  58/100] Training Loss: 0.000, Testing Loss: 0.653, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  59/100] Training Loss: 0.000, Testing Loss: 0.657, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  60/100] Training Loss: 0.000, Testing Loss: 0.661, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  61/100] Training Loss: 0.000, Testing Loss: 0.666, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  62/100] Training Loss: 0.000, Testing Loss: 0.673, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  63/100] Training Loss: 0.000, Testing Loss: 0.676, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  64/100] Training Loss: 0.000, Testing Loss: 0.682, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  65/100] Training Loss: 0.000, Testing Loss: 0.686, Training Acc: 1.000, Testing Acc: 0.676
+[Epoch:  66/100] Training Loss: 0.000, Testing Loss: 0.691, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  67/100] Training Loss: 0.000, Testing Loss: 0.698, Training Acc: 1.000, Testing Acc: 0.676
+[Epoch:  68/100] Training Loss: 0.000, Testing Loss: 0.699, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  69/100] Training Loss: 0.000, Testing Loss: 0.703, Training Acc: 1.000, Testing Acc: 0.676
+[Epoch:  70/100] Training Loss: 0.000, Testing Loss: 0.707, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  71/100] Training Loss: 0.000, Testing Loss: 0.713, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  72/100] Training Loss: 0.000, Testing Loss: 0.717, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  73/100] Training Loss: 0.000, Testing Loss: 0.721, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  74/100] Training Loss: 0.000, Testing Loss: 0.724, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  75/100] Training Loss: 0.000, Testing Loss: 0.728, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  76/100] Training Loss: 0.000, Testing Loss: 0.732, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  77/100] Training Loss: 0.000, Testing Loss: 0.737, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  78/100] Training Loss: 0.000, Testing Loss: 0.739, Training Acc: 1.000, Testing Acc: 0.676
+[Epoch:  79/100] Training Loss: 0.000, Testing Loss: 0.741, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  80/100] Training Loss: 0.000, Testing Loss: 0.746, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  81/100] Training Loss: 0.000, Testing Loss: 0.749, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  82/100] Training Loss: 0.000, Testing Loss: 0.751, Training Acc: 1.000, Testing Acc: 0.673
+[Epoch:  83/100] Training Loss: 0.000, Testing Loss: 0.754, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  84/100] Training Loss: 0.000, Testing Loss: 0.757, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  85/100] Training Loss: 0.000, Testing Loss: 0.760, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  86/100] Training Loss: 0.000, Testing Loss: 0.764, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  87/100] Training Loss: 0.000, Testing Loss: 0.767, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  88/100] Training Loss: 0.000, Testing Loss: 0.769, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  89/100] Training Loss: 0.000, Testing Loss: 0.772, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  90/100] Training Loss: 0.000, Testing Loss: 0.776, Training Acc: 1.000, Testing Acc: 0.671
+[Epoch:  91/100] Training Loss: 0.000, Testing Loss: 0.779, Training Acc: 1.000, Testing Acc: 0.672
+[Epoch:  92/100] Training Loss: 0.000, Testing Loss: 0.780, Training Acc: 1.000, Testing Acc: 0.674
+[Epoch:  93/100] Training Loss: 0.000, Testing Loss: 0.783, Training Acc: 1.000, Testing Acc: 0.672
+[Epoch:  94/100] Training Loss: 0.000, Testing Loss: 0.786, Training Acc: 1.000, Testing Acc: 0.672
+[Epoch:  95/100] Training Loss: 0.000, Testing Loss: 0.787, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  96/100] Training Loss: 0.000, Testing Loss: 0.791, Training Acc: 1.000, Testing Acc: 0.672
+[Epoch:  97/100] Training Loss: 0.000, Testing Loss: 0.793, Training Acc: 1.000, Testing Acc: 0.671
+[Epoch:  98/100] Training Loss: 0.000, Testing Loss: 0.796, Training Acc: 1.000, Testing Acc: 0.671
+[Epoch:  99/100] Training Loss: 0.000, Testing Loss: 0.798, Training Acc: 1.000, Testing Acc: 0.672
+
+(Increase embedding)
+5.lr = 0.01; epochs 30; embedding_dim = 200; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.173, Testing Loss: 0.174, Training Acc: 0.506, Testing Acc: 0.509
+[Epoch:   1/100] Training Loss: 0.173, Testing Loss: 0.174, Training Acc: 0.532, Testing Acc: 0.520
+[Epoch:   2/100] Training Loss: 0.172, Testing Loss: 0.173, Training Acc: 0.549, Testing Acc: 0.522
+[Epoch:   3/100] Training Loss: 0.170, Testing Loss: 0.174, Training Acc: 0.563, Testing Acc: 0.536
+[Epoch:   4/100] Training Loss: 0.168, Testing Loss: 0.173, Training Acc: 0.575, Testing Acc: 0.541
+[Epoch:   5/100] Training Loss: 0.165, Testing Loss: 0.173, Training Acc: 0.603, Testing Acc: 0.563
+[Epoch:   6/100] Training Loss: 0.161, Testing Loss: 0.172, Training Acc: 0.626, Testing Acc: 0.576
+[Epoch:   7/100] Training Loss: 0.156, Testing Loss: 0.171, Training Acc: 0.651, Testing Acc: 0.582
+[Epoch:   8/100] Training Loss: 0.149, Testing Loss: 0.173, Training Acc: 0.684, Testing Acc: 0.590
+[Epoch:   9/100] Training Loss: 0.141, Testing Loss: 0.171, Training Acc: 0.714, Testing Acc: 0.593
+[Epoch:  10/100] Training Loss: 0.131, Testing Loss: 0.170, Training Acc: 0.741, Testing Acc: 0.616
+[Epoch:  11/100] Training Loss: 0.120, Testing Loss: 0.179, Training Acc: 0.771, Testing Acc: 0.610
+[Epoch:  12/100] Training Loss: 0.108, Testing Loss: 0.181, Training Acc: 0.803, Testing Acc: 0.637
+[Epoch:  13/100] Training Loss: 0.095, Testing Loss: 0.187, Training Acc: 0.836, Testing Acc: 0.644
+[Epoch:  14/100] Training Loss: 0.082, Testing Loss: 0.193, Training Acc: 0.862, Testing Acc: 0.647
+[Epoch:  15/100] Training Loss: 0.070, Testing Loss: 0.199, Training Acc: 0.889, Testing Acc: 0.649
+[Epoch:  16/100] Training Loss: 0.058, Testing Loss: 0.213, Training Acc: 0.913, Testing Acc: 0.659
+[Epoch:  17/100] Training Loss: 0.048, Testing Loss: 0.233, Training Acc: 0.935, Testing Acc: 0.643
+[Epoch:  18/100] Training Loss: 0.038, Testing Loss: 0.243, Training Acc: 0.953, Testing Acc: 0.659
+[Epoch:  19/100] Training Loss: 0.029, Testing Loss: 0.241, Training Acc: 0.966, Testing Acc: 0.673
+[Epoch:  20/100] Training Loss: 0.023, Testing Loss: 0.270, Training Acc: 0.978, Testing Acc: 0.662
+[Epoch:  21/100] Training Loss: 0.017, Testing Loss: 0.293, Training Acc: 0.987, Testing Acc: 0.674
+[Epoch:  22/100] Training Loss: 0.013, Testing Loss: 0.319, Training Acc: 0.990, Testing Acc: 0.657
+[Epoch:  23/100] Training Loss: 0.010, Testing Loss: 0.311, Training Acc: 0.993, Testing Acc: 0.672
+[Epoch:  24/100] Training Loss: 0.009, Testing Loss: 0.334, Training Acc: 0.995, Testing Acc: 0.668
+[Epoch:  25/100] Training Loss: 0.006, Testing Loss: 0.352, Training Acc: 0.997, Testing Acc: 0.672
+[Epoch:  26/100] Training Loss: 0.005, Testing Loss: 0.345, Training Acc: 0.998, Testing Acc: 0.681
+[Epoch:  27/100] Training Loss: 0.004, Testing Loss: 0.376, Training Acc: 0.998, Testing Acc: 0.663
+[Epoch:  28/100] Training Loss: 0.002, Testing Loss: 0.414, Training Acc: 1.000, Testing Acc: 0.669
+[Epoch:  29/100] Training Loss: 0.002, Testing Loss: 0.443, Training Acc: 1.000, Testing Acc: 0.672
+[Epoch:  30/100] Training Loss: 0.001, Testing Loss: 0.459, Training Acc: 1.000, Testing Acc: 0.666
+[Epoch:  31/100] Training Loss: 0.001, Testing Loss: 0.481, Training Acc: 1.000, Testing Acc: 0.667
+[Epoch:  32/100] Training Loss: 0.001, Testing Loss: 0.494, Training Acc: 1.000, Testing Acc: 0.668
+[Epoch:  33/100] Training Loss: 0.001, Testing Loss: 0.507, Training Acc: 1.000, Testing Acc: 0.673
+[Epoch:  34/100] Training Loss: 0.001, Testing Loss: 0.522, Training Acc: 1.000, Testing Acc: 0.675
+[Epoch:  35/100] Training Loss: 0.002, Testing Loss: 0.393, Training Acc: 0.999, Testing Acc: 0.676
+[Epoch:  36/100] Training Loss: 0.009, Testing Loss: 0.371, Training Acc: 0.991, Testing Acc: 0.676
+[Epoch:  37/100] Training Loss: 0.007, Testing Loss: 0.406, Training Acc: 0.994, Testing Acc: 0.663
+[Epoch:  38/100] Training Loss: 0.004, Testing Loss: 0.376, Training Acc: 0.997, Testing Acc: 0.666
+[Epoch:  39/100] Training Loss: 0.003, Testing Loss: 0.398, Training Acc: 0.999, Testing Acc: 0.679
+[Epoch:  40/100] Training Loss: 0.001, Testing Loss: 0.415, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  41/100] Training Loss: 0.001, Testing Loss: 0.446, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  42/100] Training Loss: 0.001, Testing Loss: 0.465, Training Acc: 1.000, Testing Acc: 0.683
+[Epoch:  43/100] Training Loss: 0.000, Testing Loss: 0.477, Training Acc: 1.000, Testing Acc: 0.681
+[Epoch:  44/100] Training Loss: 0.000, Testing Loss: 0.488, Training Acc: 1.000, Testing Acc: 0.684
+[Epoch:  45/100] Training Loss: 0.000, Testing Loss: 0.498, Training Acc: 1.000, Testing Acc: 0.681
+[Epoch:  46/100] Training Loss: 0.000, Testing Loss: 0.505, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  47/100] Training Loss: 0.000, Testing Loss: 0.513, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  48/100] Training Loss: 0.000, Testing Loss: 0.518, Training Acc: 1.000, Testing Acc: 0.679
+[Epoch:  49/100] Training Loss: 0.000, Testing Loss: 0.525, Training Acc: 1.000, Testing Acc: 0.678
+[Epoch:  50/100] Training Loss: 0.000, Testing Loss: 0.531, Training Acc: 1.000, Testing Acc: 0.677
+[Epoch:  51/100] Training Loss: 0.000, Testing Loss: 0.536, Training Acc: 1.000, Testing Acc: 0.681
+[Epoch:  52/100] Training Loss: 0.000, Testing Loss: 0.540, Training Acc: 1.000, Testing Acc: 0.680
+[Epoch:  53/100] Training Loss: 0.000, Testing Loss: 0.544, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  54/100] Training Loss: 0.000, Testing Loss: 0.548, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  55/100] Training Loss: 0.000, Testing Loss: 0.552, Training Acc: 1.000, Testing Acc: 0.684
+[Epoch:  56/100] Training Loss: 0.000, Testing Loss: 0.555, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  57/100] Training Loss: 0.000, Testing Loss: 0.558, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  58/100] Training Loss: 0.000, Testing Loss: 0.561, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  59/100] Training Loss: 0.000, Testing Loss: 0.565, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  60/100] Training Loss: 0.000, Testing Loss: 0.567, Training Acc: 1.000, Testing Acc: 0.683
+[Epoch:  61/100] Training Loss: 0.000, Testing Loss: 0.571, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  62/100] Training Loss: 0.000, Testing Loss: 0.573, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  63/100] Training Loss: 0.000, Testing Loss: 0.576, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  64/100] Training Loss: 0.000, Testing Loss: 0.579, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  65/100] Training Loss: 0.000, Testing Loss: 0.581, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  66/100] Training Loss: 0.000, Testing Loss: 0.584, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  67/100] Training Loss: 0.000, Testing Loss: 0.586, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  68/100] Training Loss: 0.000, Testing Loss: 0.589, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  69/100] Training Loss: 0.000, Testing Loss: 0.591, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  70/100] Training Loss: 0.000, Testing Loss: 0.594, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  71/100] Training Loss: 0.000, Testing Loss: 0.596, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  72/100] Training Loss: 0.000, Testing Loss: 0.598, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  73/100] Training Loss: 0.000, Testing Loss: 0.600, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  74/100] Training Loss: 0.000, Testing Loss: 0.602, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  75/100] Training Loss: 0.000, Testing Loss: 0.604, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  76/100] Training Loss: 0.000, Testing Loss: 0.606, Training Acc: 1.000, Testing Acc: 0.689
+[Epoch:  77/100] Training Loss: 0.000, Testing Loss: 0.608, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  78/100] Training Loss: 0.000, Testing Loss: 0.610, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  79/100] Training Loss: 0.000, Testing Loss: 0.612, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  80/100] Training Loss: 0.000, Testing Loss: 0.614, Training Acc: 1.000, Testing Acc: 0.688
+[Epoch:  81/100] Training Loss: 0.000, Testing Loss: 0.615, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  82/100] Training Loss: 0.000, Testing Loss: 0.617, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  83/100] Training Loss: 0.000, Testing Loss: 0.619, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  84/100] Training Loss: 0.000, Testing Loss: 0.621, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  85/100] Training Loss: 0.000, Testing Loss: 0.622, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  86/100] Training Loss: 0.000, Testing Loss: 0.624, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  87/100] Training Loss: 0.000, Testing Loss: 0.625, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  88/100] Training Loss: 0.000, Testing Loss: 0.627, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  89/100] Training Loss: 0.000, Testing Loss: 0.629, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  90/100] Training Loss: 0.000, Testing Loss: 0.630, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  91/100] Training Loss: 0.000, Testing Loss: 0.632, Training Acc: 1.000, Testing Acc: 0.687
+[Epoch:  92/100] Training Loss: 0.000, Testing Loss: 0.633, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  93/100] Training Loss: 0.000, Testing Loss: 0.635, Training Acc: 1.000, Testing Acc: 0.686
+[Epoch:  94/100] Training Loss: 0.000, Testing Loss: 0.636, Training Acc: 1.000, Testing Acc: 0.685
+[Epoch:  95/100] Training Loss: 0.000, Testing Loss: 0.638, Training Acc: 1.000, Testing Acc: 0.684
+[Epoch:  96/100] Training Loss: 0.000, Testing Loss: 0.639, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  97/100] Training Loss: 0.000, Testing Loss: 0.640, Training Acc: 1.000, Testing Acc: 0.682
+[Epoch:  98/100] Training Loss: 0.000, Testing Loss: 0.642, Training Acc: 1.000, Testing Acc: 0.683
+[Epoch:  99/100] Training Loss: 0.000, Testing Loss: 0.643, Training Acc: 1.000, Testing Acc: 0.683
+
+(using smaller embedding_dim and hidden_dim, seems it needs more epochs to converge)
+6.lr = 0.01; epochs 30; embedding_dim = 50; hidden_dim = 25; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/ 30] Training Loss: 0.174, Testing Loss: 0.173, Training Acc: 0.509, Testing Acc: 0.529
+[Epoch:   1/ 30] Training Loss: 0.173, Testing Loss: 0.173, Training Acc: 0.509, Testing Acc: 0.534
+[Epoch:   2/ 30] Training Loss: 0.173, Testing Loss: 0.173, Training Acc: 0.516, Testing Acc: 0.531
+[Epoch:   3/ 30] Training Loss: 0.173, Testing Loss: 0.172, Training Acc: 0.529, Testing Acc: 0.536
+[Epoch:   4/ 30] Training Loss: 0.172, Testing Loss: 0.172, Training Acc: 0.535, Testing Acc: 0.542
+[Epoch:   5/ 30] Training Loss: 0.172, Testing Loss: 0.172, Training Acc: 0.541, Testing Acc: 0.550
+[Epoch:   6/ 30] Training Loss: 0.172, Testing Loss: 0.172, Training Acc: 0.544, Testing Acc: 0.537
+[Epoch:   7/ 30] Training Loss: 0.171, Testing Loss: 0.172, Training Acc: 0.547, Testing Acc: 0.552
+[Epoch:   8/ 30] Training Loss: 0.171, Testing Loss: 0.172, Training Acc: 0.551, Testing Acc: 0.546
+[Epoch:   9/ 30] Training Loss: 0.170, Testing Loss: 0.172, Training Acc: 0.561, Testing Acc: 0.546
+[Epoch:  10/ 30] Training Loss: 0.169, Testing Loss: 0.172, Training Acc: 0.572, Testing Acc: 0.553
+[Epoch:  11/ 30] Training Loss: 0.168, Testing Loss: 0.172, Training Acc: 0.583, Testing Acc: 0.554
+[Epoch:  12/ 30] Training Loss: 0.167, Testing Loss: 0.172, Training Acc: 0.590, Testing Acc: 0.564
+[Epoch:  13/ 30] Training Loss: 0.165, Testing Loss: 0.171, Training Acc: 0.601, Testing Acc: 0.564
+[Epoch:  14/ 30] Training Loss: 0.164, Testing Loss: 0.172, Training Acc: 0.617, Testing Acc: 0.568
+[Epoch:  15/ 30] Training Loss: 0.162, Testing Loss: 0.171, Training Acc: 0.621, Testing Acc: 0.571
+[Epoch:  16/ 30] Training Loss: 0.159, Testing Loss: 0.171, Training Acc: 0.639, Testing Acc: 0.567
+[Epoch:  17/ 30] Training Loss: 0.157, Testing Loss: 0.172, Training Acc: 0.649, Testing Acc: 0.577
+[Epoch:  18/ 30] Training Loss: 0.154, Testing Loss: 0.170, Training Acc: 0.655, Testing Acc: 0.595
+[Epoch:  19/ 30] Training Loss: 0.150, Testing Loss: 0.169, Training Acc: 0.673, Testing Acc: 0.606
+[Epoch:  20/ 30] Training Loss: 0.147, Testing Loss: 0.169, Training Acc: 0.683, Testing Acc: 0.608
+[Epoch:  21/ 30] Training Loss: 0.143, Testing Loss: 0.166, Training Acc: 0.697, Testing Acc: 0.618
+[Epoch:  22/ 30] Training Loss: 0.139, Testing Loss: 0.173, Training Acc: 0.708, Testing Acc: 0.605
+[Epoch:  23/ 30] Training Loss: 0.135, Testing Loss: 0.172, Training Acc: 0.725, Testing Acc: 0.606
+[Epoch:  24/ 30] Training Loss: 0.131, Testing Loss: 0.169, Training Acc: 0.736, Testing Acc: 0.629
+[Epoch:  25/ 30] Training Loss: 0.126, Testing Loss: 0.172, Training Acc: 0.754, Testing Acc: 0.626
+[Epoch:  26/ 30] Training Loss: 0.122, Testing Loss: 0.175, Training Acc: 0.762, Testing Acc: 0.636
+[Epoch:  27/ 30] Training Loss: 0.118, Testing Loss: 0.180, Training Acc: 0.775, Testing Acc: 0.623
+[Epoch:  28/ 30] Training Loss: 0.114, Testing Loss: 0.181, Training Acc: 0.786, Testing Acc: 0.616
+[Epoch:  29/ 30] Training Loss: 0.110, Testing Loss: 0.184, Training Acc: 0.797, Testing Acc: 0.631
+
+(also using smaller embedding_dim and hidden_dim, but sentence_len is smaller, worse performance)
+7.lr = 0.01; epochs 30; embedding_dim = 50; hidden_dim = 25; sentence_len = 8; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.174, Testing Loss: 0.174, Training Acc: 0.513, Testing Acc: 0.485
+[Epoch:   1/100] Training Loss: 0.173, Testing Loss: 0.174, Training Acc: 0.526, Testing Acc: 0.492
+[Epoch:   2/100] Training Loss: 0.172, Testing Loss: 0.174, Training Acc: 0.541, Testing Acc: 0.523
+[Epoch:   3/100] Training Loss: 0.172, Testing Loss: 0.174, Training Acc: 0.542, Testing Acc: 0.504
+[Epoch:   4/100] Training Loss: 0.171, Testing Loss: 0.173, Training Acc: 0.547, Testing Acc: 0.517
+[Epoch:   5/100] Training Loss: 0.171, Testing Loss: 0.173, Training Acc: 0.559, Testing Acc: 0.516
+[Epoch:   6/100] Training Loss: 0.170, Testing Loss: 0.173, Training Acc: 0.570, Testing Acc: 0.549
+[Epoch:   7/100] Training Loss: 0.169, Testing Loss: 0.172, Training Acc: 0.577, Testing Acc: 0.547
+[Epoch:   8/100] Training Loss: 0.168, Testing Loss: 0.173, Training Acc: 0.586, Testing Acc: 0.547
+[Epoch:   9/100] Training Loss: 0.167, Testing Loss: 0.171, Training Acc: 0.594, Testing Acc: 0.569
+[Epoch:  10/100] Training Loss: 0.165, Testing Loss: 0.171, Training Acc: 0.608, Testing Acc: 0.541
+[Epoch:  11/100] Training Loss: 0.163, Testing Loss: 0.170, Training Acc: 0.616, Testing Acc: 0.591
+[Epoch:  12/100] Training Loss: 0.161, Testing Loss: 0.171, Training Acc: 0.629, Testing Acc: 0.575
+[Epoch:  13/100] Training Loss: 0.159, Testing Loss: 0.169, Training Acc: 0.640, Testing Acc: 0.588
+[Epoch:  14/100] Training Loss: 0.156, Testing Loss: 0.169, Training Acc: 0.648, Testing Acc: 0.586
+[Epoch:  15/100] Training Loss: 0.154, Testing Loss: 0.169, Training Acc: 0.662, Testing Acc: 0.594
+[Epoch:  16/100] Training Loss: 0.150, Testing Loss: 0.173, Training Acc: 0.672, Testing Acc: 0.589
+[Epoch:  17/100] Training Loss: 0.148, Testing Loss: 0.171, Training Acc: 0.680, Testing Acc: 0.601
+[Epoch:  18/100] Training Loss: 0.145, Testing Loss: 0.174, Training Acc: 0.693, Testing Acc: 0.605
+[Epoch:  19/100] Training Loss: 0.142, Testing Loss: 0.173, Training Acc: 0.704, Testing Acc: 0.607
+[Epoch:  20/100] Training Loss: 0.138, Testing Loss: 0.177, Training Acc: 0.712, Testing Acc: 0.606
+[Epoch:  21/100] Training Loss: 0.135, Testing Loss: 0.178, Training Acc: 0.727, Testing Acc: 0.599
+[Epoch:  22/100] Training Loss: 0.132, Testing Loss: 0.177, Training Acc: 0.737, Testing Acc: 0.602
+[Epoch:  23/100] Training Loss: 0.129, Testing Loss: 0.178, Training Acc: 0.742, Testing Acc: 0.619
+[Epoch:  24/100] Training Loss: 0.125, Testing Loss: 0.184, Training Acc: 0.755, Testing Acc: 0.597
+[Epoch:  25/100] Training Loss: 0.121, Testing Loss: 0.183, Training Acc: 0.767, Testing Acc: 0.605
+[Epoch:  26/100] Training Loss: 0.118, Testing Loss: 0.188, Training Acc: 0.771, Testing Acc: 0.591
+[Epoch:  27/100] Training Loss: 0.115, Testing Loss: 0.191, Training Acc: 0.781, Testing Acc: 0.600
+[Epoch:  28/100] Training Loss: 0.111, Testing Loss: 0.193, Training Acc: 0.792, Testing Acc: 0.606
+[Epoch:  29/100] Training Loss: 0.108, Testing Loss: 0.195, Training Acc: 0.800, Testing Acc: 0.598
+
+8.lr = 0.1; epochs 100; embedding_dim = 200; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.175, Testing Loss: 0.174, Training Acc: 0.513, Testing Acc: 0.529
+[Epoch:   1/100] Training Loss: 0.168, Testing Loss: 0.173, Training Acc: 0.585, Testing Acc: 0.559
+[Epoch:   2/100] Training Loss: 0.154, Testing Loss: 0.166, Training Acc: 0.661, Testing Acc: 0.624
+[Epoch:   3/100] Training Loss: 0.133, Testing Loss: 0.176, Training Acc: 0.736, Testing Acc: 0.611
+[Epoch:   4/100] Training Loss: 0.107, Testing Loss: 0.192, Training Acc: 0.803, Testing Acc: 0.626
+[Epoch:   5/100] Training Loss: 0.084, Testing Loss: 0.221, Training Acc: 0.855, Testing Acc: 0.616
+[Epoch:   6/100] Training Loss: 0.066, Testing Loss: 0.260, Training Acc: 0.889, Testing Acc: 0.603
+[Epoch:   7/100] Training Loss: 0.050, Testing Loss: 0.299, Training Acc: 0.918, Testing Acc: 0.638
+[Epoch:   8/100] Training Loss: 0.036, Testing Loss: 0.319, Training Acc: 0.945, Testing Acc: 0.628
+[Epoch:   9/100] Training Loss: 0.027, Testing Loss: 0.354, Training Acc: 0.961, Testing Acc: 0.628
+[Epoch:  10/100] Training Loss: 0.021, Testing Loss: 0.386, Training Acc: 0.970, Testing Acc: 0.622
+[Epoch:  11/100] Training Loss: 0.014, Testing Loss: 0.403, Training Acc: 0.981, Testing Acc: 0.617
+[Epoch:  12/100] Training Loss: 0.011, Testing Loss: 0.445, Training Acc: 0.987, Testing Acc: 0.638
+[Epoch:  13/100] Training Loss: 0.011, Testing Loss: 0.444, Training Acc: 0.987, Testing Acc: 0.633
+[Epoch:  14/100] Training Loss: 0.014, Testing Loss: 0.476, Training Acc: 0.982, Testing Acc: 0.632
+[Epoch:  15/100] Training Loss: 0.020, Testing Loss: 0.470, Training Acc: 0.970, Testing Acc: 0.618
+[Epoch:  16/100] Training Loss: 0.021, Testing Loss: 0.469, Training Acc: 0.969, Testing Acc: 0.639
+[Epoch:  17/100] Training Loss: 0.018, Testing Loss: 0.504, Training Acc: 0.974, Testing Acc: 0.616
+[Epoch:  18/100] Training Loss: 0.011, Testing Loss: 0.501, Training Acc: 0.986, Testing Acc: 0.634
+[Epoch:  19/100] Training Loss: 0.006, Testing Loss: 0.518, Training Acc: 0.995, Testing Acc: 0.644
+[Epoch:  20/100] Training Loss: 0.002, Testing Loss: 0.543, Training Acc: 0.999, Testing Acc: 0.642
+[Epoch:  21/100] Training Loss: 0.001, Testing Loss: 0.549, Training Acc: 1.000, Testing Acc: 0.642
+[Epoch:  22/100] Training Loss: 0.000, Testing Loss: 0.566, Training Acc: 1.000, Testing Acc: 0.641
+[Epoch:  23/100] Training Loss: 0.000, Testing Loss: 0.574, Training Acc: 1.000, Testing Acc: 0.644
+[Epoch:  24/100] Training Loss: 0.000, Testing Loss: 0.581, Training Acc: 1.000, Testing Acc: 0.646
+[Epoch:  25/100] Training Loss: 0.000, Testing Loss: 0.593, Training Acc: 1.000, Testing Acc: 0.645
+[Epoch:  26/100] Training Loss: 0.000, Testing Loss: 0.601, Training Acc: 1.000, Testing Acc: 0.645
+[Epoch:  27/100] Training Loss: 0.000, Testing Loss: 0.610, Training Acc: 1.000, Testing Acc: 0.646
+[Epoch:  28/100] Training Loss: 0.000, Testing Loss: 0.621, Training Acc: 1.000, Testing Acc: 0.644
+[Epoch:  29/100] Training Loss: 0.000, Testing Loss: 0.594, Training Acc: 1.000, Testing Acc: 0.644
+[Epoch:  30/100] Training Loss: 0.000, Testing Loss: 0.599, Training Acc: 1.000, Testing Acc: 0.644
+[Epoch:  31/100] Training Loss: 0.000, Testing Loss: 0.603, Training Acc: 1.000, Testing Acc: 0.642
+[Epoch:  32/100] Training Loss: 0.000, Testing Loss: 0.608, Training Acc: 1.000, Testing Acc: 0.642
+[Epoch:  33/100] Training Loss: 0.000, Testing Loss: 0.612, Training Acc: 1.000, Testing Acc: 0.641
+[Epoch:  34/100] Training Loss: 0.000, Testing Loss: 0.616, Training Acc: 1.000, Testing Acc: 0.640
+[Epoch:  35/100] Training Loss: 0.000, Testing Loss: 0.620, Training Acc: 1.000, Testing Acc: 0.639
+[Epoch:  36/100] Training Loss: 0.000, Testing Loss: 0.624, Training Acc: 1.000, Testing Acc: 0.639
+[Epoch:  37/100] Training Loss: 0.000, Testing Loss: 0.628, Training Acc: 1.000, Testing Acc: 0.640
+[Epoch:  38/100] Training Loss: 0.000, Testing Loss: 0.633, Training Acc: 1.000, Testing Acc: 0.640
+[Epoch:  39/100] Training Loss: 0.000, Testing Loss: 0.637, Training Acc: 1.000, Testing Acc: 0.640
+[Epoch:  40/100] Training Loss: 0.000, Testing Loss: 0.645, Training Acc: 1.000, Testing Acc: 0.638
+[Epoch:  41/100] Training Loss: 0.000, Testing Loss: 0.651, Training Acc: 1.000, Testing Acc: 0.639
+[Epoch:  42/100] Training Loss: 0.000, Testing Loss: 0.656, Training Acc: 1.000, Testing Acc: 0.638
+[Epoch:  43/100] Training Loss: 0.000, Testing Loss: 0.660, Training Acc: 1.000, Testing Acc: 0.640
+[Epoch:  44/100] Training Loss: 0.000, Testing Loss: 0.612, Training Acc: 1.000, Testing Acc: 0.644
+[Epoch:  45/100] Training Loss: 0.000, Testing Loss: 0.616, Training Acc: 1.000, Testing Acc: 0.642
+[Epoch:  46/100] Training Loss: 0.000, Testing Loss: 0.621, Training Acc: 1.000, Testing Acc: 0.642
+[Epoch:  47/100] Training Loss: 0.000, Testing Loss: 0.624, Training Acc: 1.000, Testing Acc: 0.643
+[Epoch:  48/100] Training Loss: 0.000, Testing Loss: 0.627, Training Acc: 1.000, Testing Acc: 0.641
+[Epoch:  49/100] Training Loss: 0.000, Testing Loss: 0.630, Training Acc: 1.000, Testing Acc: 0.641
+
+9.lr = 0.001; epochs 100; embedding_dim = 200; hidden_dim = 50; sentence_len = 16; SGD; CrossEntropy; batch_size 4
+
+
+10.lr = 0.01; epochs 100; embedding_dim = 200; hidden_dim = 50; sentence_len = 16; Adam; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.178, Testing Loss: 0.179, Training Acc: 0.518, Testing Acc: 0.513
+[Epoch:   1/100] Training Loss: 0.171, Testing Loss: 0.183, Training Acc: 0.576, Testing Acc: 0.537
+[Epoch:   2/100] Training Loss: 0.154, Testing Loss: 0.188, Training Acc: 0.664, Testing Acc: 0.530
+[Epoch:   3/100] Training Loss: 0.132, Testing Loss: 0.196, Training Acc: 0.736, Testing Acc: 0.568
+[Epoch:   4/100] Training Loss: 0.115, Testing Loss: 0.207, Training Acc: 0.779, Testing Acc: 0.561
+[Epoch:   5/100] Training Loss: 0.106, Testing Loss: 0.229, Training Acc: 0.804, Testing Acc: 0.565
+[Epoch:   6/100] Training Loss: 0.094, Testing Loss: 0.228, Training Acc: 0.830, Testing Acc: 0.581
+[Epoch:   7/100] Training Loss: 0.090, Testing Loss: 0.264, Training Acc: 0.840, Testing Acc: 0.559
+[Epoch:   8/100] Training Loss: 0.086, Testing Loss: 0.250, Training Acc: 0.852, Testing Acc: 0.570
+[Epoch:   9/100] Training Loss: 0.080, Testing Loss: 0.266, Training Acc: 0.861, Testing Acc: 0.566
+[Epoch:  10/100] Training Loss: 0.077, Testing Loss: 0.274, Training Acc: 0.868, Testing Acc: 0.578
+[Epoch:  11/100] Training Loss: 0.073, Testing Loss: 0.296, Training Acc: 0.876, Testing Acc: 0.552
+[Epoch:  12/100] Training Loss: 0.070, Testing Loss: 0.291, Training Acc: 0.881, Testing Acc: 0.560
+[Epoch:  13/100] Training Loss: 0.073, Testing Loss: 0.302, Training Acc: 0.879, Testing Acc: 0.564
+[Epoch:  14/100] Training Loss: 0.069, Testing Loss: 0.303, Training Acc: 0.880, Testing Acc: 0.555
+[Epoch:  15/100] Training Loss: 0.066, Testing Loss: 0.315, Training Acc: 0.890, Testing Acc: 0.553
+[Epoch:  16/100] Training Loss: 0.062, Testing Loss: 0.320, Training Acc: 0.896, Testing Acc: 0.568
+[Epoch:  17/100] Training Loss: 0.061, Testing Loss: 0.311, Training Acc: 0.898, Testing Acc: 0.576
+[Epoch:  18/100] Training Loss: 0.060, Testing Loss: 0.316, Training Acc: 0.898, Testing Acc: 0.572
+[Epoch:  19/100] Training Loss: 0.059, Testing Loss: 0.312, Training Acc: 0.898, Testing Acc: 0.577
+[Epoch:  20/100] Training Loss: 0.057, Testing Loss: 0.325, Training Acc: 0.903, Testing Acc: 0.573
+[Epoch:  21/100] Training Loss: 0.054, Testing Loss: 0.339, Training Acc: 0.909, Testing Acc: 0.590
+[Epoch:  22/100] Training Loss: 0.054, Testing Loss: 0.332, Training Acc: 0.911, Testing Acc: 0.586
+[Epoch:  23/100] Training Loss: 0.053, Testing Loss: 0.350, Training Acc: 0.913, Testing Acc: 0.555
+[Epoch:  24/100] Training Loss: 0.052, Testing Loss: 0.365, Training Acc: 0.917, Testing Acc: 0.574
+[Epoch:  25/100] Training Loss: 0.052, Testing Loss: 0.360, Training Acc: 0.914, Testing Acc: 0.576
+[Epoch:  26/100] Training Loss: 0.052, Testing Loss: 0.346, Training Acc: 0.915, Testing Acc: 0.560
+[Epoch:  27/100] Training Loss: 0.049, Testing Loss: 0.353, Training Acc: 0.917, Testing Acc: 0.562
+[Epoch:  28/100] Training Loss: 0.045, Testing Loss: 0.366, Training Acc: 0.926, Testing Acc: 0.577
+[Epoch:  29/100] Training Loss: 0.044, Testing Loss: 0.369, Training Acc: 0.931, Testing Acc: 0.562
+[Epoch:  30/100] Training Loss: 0.044, Testing Loss: 0.377, Training Acc: 0.930, Testing Acc: 0.560
+[Epoch:  31/100] Training Loss: 0.045, Testing Loss: 0.363, Training Acc: 0.928, Testing Acc: 0.559
+[Epoch:  32/100] Training Loss: 0.044, Testing Loss: 0.347, Training Acc: 0.931, Testing Acc: 0.589
+[Epoch:  33/100] Training Loss: 0.044, Testing Loss: 0.357, Training Acc: 0.928, Testing Acc: 0.578
+[Epoch:  34/100] Training Loss: 0.044, Testing Loss: 0.362, Training Acc: 0.930, Testing Acc: 0.565
+[Epoch:  35/100] Training Loss: 0.044, Testing Loss: 0.375, Training Acc: 0.929, Testing Acc: 0.570
+[Epoch:  36/100] Training Loss: 0.044, Testing Loss: 0.358, Training Acc: 0.927, Testing Acc: 0.568
+[Epoch:  37/100] Training Loss: 0.043, Testing Loss: 0.359, Training Acc: 0.931, Testing Acc: 0.568
+[Epoch:  38/100] Training Loss: 0.042, Testing Loss: 0.365, Training Acc: 0.931, Testing Acc: 0.571
+[Epoch:  39/100] Training Loss: 0.040, Testing Loss: 0.373, Training Acc: 0.935, Testing Acc: 0.571
+[Epoch:  40/100] Training Loss: 0.041, Testing Loss: 0.390, Training Acc: 0.933, Testing Acc: 0.571
+[Epoch:  41/100] Training Loss: 0.041, Testing Loss: 0.367, Training Acc: 0.936, Testing Acc: 0.566
+[Epoch:  42/100] Training Loss: 0.040, Testing Loss: 0.380, Training Acc: 0.937, Testing Acc: 0.572
+[Epoch:  43/100] Training Loss: 0.040, Testing Loss: 0.388, Training Acc: 0.936, Testing Acc: 0.584
+[Epoch:  44/100] Training Loss: 0.039, Testing Loss: 0.388, Training Acc: 0.937, Testing Acc: 0.589
+[Epoch:  45/100] Training Loss: 0.039, Testing Loss: 0.374, Training Acc: 0.934, Testing Acc: 0.581
+[Epoch:  46/100] Training Loss: 0.037, Testing Loss: 0.405, Training Acc: 0.938, Testing Acc: 0.581
+[Epoch:  47/100] Training Loss: 0.038, Testing Loss: 0.384, Training Acc: 0.940, Testing Acc: 0.591
+[Epoch:  48/100] Training Loss: 0.038, Testing Loss: 0.372, Training Acc: 0.938, Testing Acc: 0.580
+[Epoch:  49/100] Training Loss: 0.038, Testing Loss: 0.356, Training Acc: 0.937, Testing Acc: 0.602
+[Epoch:  50/100] Training Loss: 0.039, Testing Loss: 0.343, Training Acc: 0.937, Testing Acc: 0.596
+[Epoch:  51/100] Training Loss: 0.039, Testing Loss: 0.367, Training Acc: 0.937, Testing Acc: 0.583
+[Epoch:  52/100] Training Loss: 0.038, Testing Loss: 0.374, Training Acc: 0.940, Testing Acc: 0.585
+[Epoch:  53/100] Training Loss: 0.037, Testing Loss: 0.372, Training Acc: 0.941, Testing Acc: 0.598
+[Epoch:  54/100] Training Loss: 0.036, Testing Loss: 0.386, Training Acc: 0.940, Testing Acc: 0.598
+[Epoch:  55/100] Training Loss: 0.037, Testing Loss: 0.356, Training Acc: 0.941, Testing Acc: 0.594
+[Epoch:  56/100] Training Loss: 0.035, Testing Loss: 0.360, Training Acc: 0.941, Testing Acc: 0.613
+[Epoch:  57/100] Training Loss: 0.035, Testing Loss: 0.371, Training Acc: 0.943, Testing Acc: 0.618
+[Epoch:  58/100] Training Loss: 0.035, Testing Loss: 0.358, Training Acc: 0.944, Testing Acc: 0.599
+[Epoch:  59/100] Training Loss: 0.036, Testing Loss: 0.350, Training Acc: 0.942, Testing Acc: 0.593
+[Epoch:  60/100] Training Loss: 0.035, Testing Loss: 0.367, Training Acc: 0.943, Testing Acc: 0.599
+[Epoch:  61/100] Training Loss: 0.035, Testing Loss: 0.379, Training Acc: 0.943, Testing Acc: 0.597
+[Epoch:  62/100] Training Loss: 0.035, Testing Loss: 0.383, Training Acc: 0.944, Testing Acc: 0.598
+[Epoch:  63/100] Training Loss: 0.034, Testing Loss: 0.393, Training Acc: 0.945, Testing Acc: 0.584
+[Epoch:  64/100] Training Loss: 0.033, Testing Loss: 0.379, Training Acc: 0.950, Testing Acc: 0.600
+[Epoch:  65/100] Training Loss: 0.032, Testing Loss: 0.393, Training Acc: 0.949, Testing Acc: 0.595
+[Epoch:  66/100] Training Loss: 0.033, Testing Loss: 0.376, Training Acc: 0.946, Testing Acc: 0.619
+[Epoch:  67/100] Training Loss: 0.033, Testing Loss: 0.390, Training Acc: 0.947, Testing Acc: 0.590
+[Epoch:  68/100] Training Loss: 0.033, Testing Loss: 0.373, Training Acc: 0.949, Testing Acc: 0.603
+[Epoch:  69/100] Training Loss: 0.034, Testing Loss: 0.360, Training Acc: 0.947, Testing Acc: 0.600
+[Epoch:  70/100] Training Loss: 0.033, Testing Loss: 0.360, Training Acc: 0.947, Testing Acc: 0.610
+[Epoch:  71/100] Training Loss: 0.033, Testing Loss: 0.375, Training Acc: 0.949, Testing Acc: 0.610
+[Epoch:  72/100] Training Loss: 0.033, Testing Loss: 0.371, Training Acc: 0.950, Testing Acc: 0.623
+[Epoch:  73/100] Training Loss: 0.032, Testing Loss: 0.370, Training Acc: 0.950, Testing Acc: 0.618
+[Epoch:  74/100] Training Loss: 0.032, Testing Loss: 0.380, Training Acc: 0.951, Testing Acc: 0.602
+[Epoch:  75/100] Training Loss: 0.033, Testing Loss: 0.356, Training Acc: 0.949, Testing Acc: 0.619
+[Epoch:  76/100] Training Loss: 0.033, Testing Loss: 0.378, Training Acc: 0.948, Testing Acc: 0.610
+[Epoch:  77/100] Training Loss: 0.032, Testing Loss: 0.377, Training Acc: 0.948, Testing Acc: 0.606
+[Epoch:  78/100] Training Loss: 0.033, Testing Loss: 0.369, Training Acc: 0.949, Testing Acc: 0.629
+[Epoch:  79/100] Training Loss: 0.033, Testing Loss: 0.366, Training Acc: 0.951, Testing Acc: 0.616
+[Epoch:  80/100] Training Loss: 0.032, Testing Loss: 0.360, Training Acc: 0.948, Testing Acc: 0.622
+[Epoch:  81/100] Training Loss: 0.031, Testing Loss: 0.382, Training Acc: 0.950, Testing Acc: 0.611
+[Epoch:  82/100] Training Loss: 0.031, Testing Loss: 0.385, Training Acc: 0.953, Testing Acc: 0.598
+[Epoch:  83/100] Training Loss: 0.030, Testing Loss: 0.385, Training Acc: 0.952, Testing Acc: 0.594
+[Epoch:  84/100] Training Loss: 0.030, Testing Loss: 0.386, Training Acc: 0.952, Testing Acc: 0.603
+[Epoch:  85/100] Training Loss: 0.030, Testing Loss: 0.408, Training Acc: 0.954, Testing Acc: 0.600
+[Epoch:  86/100] Training Loss: 0.030, Testing Loss: 0.389, Training Acc: 0.954, Testing Acc: 0.610
+[Epoch:  87/100] Training Loss: 0.030, Testing Loss: 0.396, Training Acc: 0.954, Testing Acc: 0.602
+[Epoch:  88/100] Training Loss: 0.030, Testing Loss: 0.407, Training Acc: 0.953, Testing Acc: 0.616
+[Epoch:  89/100] Training Loss: 0.031, Testing Loss: 0.364, Training Acc: 0.952, Testing Acc: 0.603
+[Epoch:  90/100] Training Loss: 0.030, Testing Loss: 0.387, Training Acc: 0.953, Testing Acc: 0.598
+[Epoch:  91/100] Training Loss: 0.029, Testing Loss: 0.381, Training Acc: 0.954, Testing Acc: 0.588
+[Epoch:  92/100] Training Loss: 0.030, Testing Loss: 0.393, Training Acc: 0.953, Testing Acc: 0.596
+[Epoch:  93/100] Training Loss: 0.030, Testing Loss: 0.411, Training Acc: 0.951, Testing Acc: 0.601
+[Epoch:  94/100] Training Loss: 0.028, Testing Loss: 0.416, Training Acc: 0.955, Testing Acc: 0.606
+[Epoch:  95/100] Training Loss: 0.028, Testing Loss: 0.429, Training Acc: 0.957, Testing Acc: 0.613
+[Epoch:  96/100] Training Loss: 0.027, Testing Loss: 0.419, Training Acc: 0.958, Testing Acc: 0.608
+[Epoch:  97/100] Training Loss: 0.027, Testing Loss: 0.432, Training Acc: 0.959, Testing Acc: 0.600
+[Epoch:  98/100] Training Loss: 0.028, Testing Loss: 0.433, Training Acc: 0.958, Testing Acc: 0.603
+[Epoch:  99/100] Training Loss: 0.027, Testing Loss: 0.425, Training Acc: 0.959, Testing Acc: 0.612
+
+11.lr = 0.01; epochs 100; embedding_dim = 200; hidden_dim = 50; sentence_len = 16; RMSprop; CrossEntropy; batch_size 4
+[Epoch:   0/100] Training Loss: 0.180, Testing Loss: 0.178, Training Acc: 0.515, Testing Acc: 0.530
+[Epoch:   1/100] Training Loss: 0.168, Testing Loss: 0.177, Training Acc: 0.601, Testing Acc: 0.557
+[Epoch:   2/100] Training Loss: 0.148, Testing Loss: 0.187, Training Acc: 0.687, Testing Acc: 0.583
+[Epoch:   3/100] Training Loss: 0.128, Testing Loss: 0.198, Training Acc: 0.752, Testing Acc: 0.589
+[Epoch:   4/100] Training Loss: 0.113, Testing Loss: 0.221, Training Acc: 0.787, Testing Acc: 0.567
+[Epoch:   5/100] Training Loss: 0.098, Testing Loss: 0.235, Training Acc: 0.823, Testing Acc: 0.582
+[Epoch:   6/100] Training Loss: 0.086, Testing Loss: 0.242, Training Acc: 0.847, Testing Acc: 0.575
+[Epoch:   7/100] Training Loss: 0.078, Testing Loss: 0.257, Training Acc: 0.861, Testing Acc: 0.583
+[Epoch:   8/100] Training Loss: 0.072, Testing Loss: 0.260, Training Acc: 0.875, Testing Acc: 0.601
+[Epoch:   9/100] Training Loss: 0.065, Testing Loss: 0.282, Training Acc: 0.891, Testing Acc: 0.586
+[Epoch:  10/100] Training Loss: 0.064, Testing Loss: 0.280, Training Acc: 0.895, Testing Acc: 0.586
+[Epoch:  11/100] Training Loss: 0.066, Testing Loss: 0.313, Training Acc: 0.888, Testing Acc: 0.583
+[Epoch:  12/100] Training Loss: 0.062, Testing Loss: 0.307, Training Acc: 0.896, Testing Acc: 0.595
+[Epoch:  13/100] Training Loss: 0.058, Testing Loss: 0.318, Training Acc: 0.902, Testing Acc: 0.581
+[Epoch:  14/100] Training Loss: 0.058, Testing Loss: 0.321, Training Acc: 0.903, Testing Acc: 0.568
+[Epoch:  15/100] Training Loss: 0.055, Testing Loss: 0.334, Training Acc: 0.907, Testing Acc: 0.570
+[Epoch:  16/100] Training Loss: 0.054, Testing Loss: 0.326, Training Acc: 0.908, Testing Acc: 0.585
+[Epoch:  17/100] Training Loss: 0.056, Testing Loss: 0.327, Training Acc: 0.906, Testing Acc: 0.596
+[Epoch:  18/100] Training Loss: 0.053, Testing Loss: 0.332, Training Acc: 0.913, Testing Acc: 0.590
+[Epoch:  19/100] Training Loss: 0.053, Testing Loss: 0.360, Training Acc: 0.913, Testing Acc: 0.583
+[Epoch:  20/100] Training Loss: 0.051, Testing Loss: 0.337, Training Acc: 0.918, Testing Acc: 0.583
+[Epoch:  21/100] Training Loss: 0.051, Testing Loss: 0.338, Training Acc: 0.917, Testing Acc: 0.583
+[Epoch:  22/100] Training Loss: 0.050, Testing Loss: 0.337, Training Acc: 0.920, Testing Acc: 0.605
+[Epoch:  23/100] Training Loss: 0.050, Testing Loss: 0.325, Training Acc: 0.917, Testing Acc: 0.596
+[Epoch:  24/100] Training Loss: 0.049, Testing Loss: 0.314, Training Acc: 0.921, Testing Acc: 0.607
+[Epoch:  25/100] Training Loss: 0.049, Testing Loss: 0.338, Training Acc: 0.922, Testing Acc: 0.612
+[Epoch:  26/100] Training Loss: 0.047, Testing Loss: 0.325, Training Acc: 0.923, Testing Acc: 0.583
+[Epoch:  27/100] Training Loss: 0.045, Testing Loss: 0.350, Training Acc: 0.927, Testing Acc: 0.614
+[Epoch:  28/100] Training Loss: 0.042, Testing Loss: 0.347, Training Acc: 0.934, Testing Acc: 0.620
+[Epoch:  29/100] Training Loss: 0.043, Testing Loss: 0.340, Training Acc: 0.930, Testing Acc: 0.589
+[Epoch:  30/100] Training Loss: 0.043, Testing Loss: 0.340, Training Acc: 0.929, Testing Acc: 0.615
+[Epoch:  31/100] Training Loss: 0.043, Testing Loss: 0.342, Training Acc: 0.931, Testing Acc: 0.606
+[Epoch:  32/100] Training Loss: 0.040, Testing Loss: 0.352, Training Acc: 0.934, Testing Acc: 0.611
+[Epoch:  33/100] Training Loss: 0.040, Testing Loss: 0.332, Training Acc: 0.934, Testing Acc: 0.615
+[Epoch:  34/100] Training Loss: 0.038, Testing Loss: 0.330, Training Acc: 0.937, Testing Acc: 0.616
+[Epoch:  35/100] Training Loss: 0.037, Testing Loss: 0.335, Training Acc: 0.941, Testing Acc: 0.628
+[Epoch:  36/100] Training Loss: 0.037, Testing Loss: 0.362, Training Acc: 0.941, Testing Acc: 0.623
+[Epoch:  37/100] Training Loss: 0.037, Testing Loss: 0.337, Training Acc: 0.940, Testing Acc: 0.638
+[Epoch:  38/100] Training Loss: 0.036, Testing Loss: 0.351, Training Acc: 0.943, Testing Acc: 0.627
+[Epoch:  39/100] Training Loss: 0.036, Testing Loss: 0.358, Training Acc: 0.944, Testing Acc: 0.635
+[Epoch:  40/100] Training Loss: 0.036, Testing Loss: 0.326, Training Acc: 0.945, Testing Acc: 0.636
+[Epoch:  41/100] Training Loss: 0.037, Testing Loss: 0.315, Training Acc: 0.941, Testing Acc: 0.629
+[Epoch:  42/100] Training Loss: 0.037, Testing Loss: 0.301, Training Acc: 0.941, Testing Acc: 0.636
+[Epoch:  43/100] Training Loss: 0.036, Testing Loss: 0.332, Training Acc: 0.943, Testing Acc: 0.653
+[Epoch:  44/100] Training Loss: 0.035, Testing Loss: 0.319, Training Acc: 0.942, Testing Acc: 0.654
+[Epoch:  45/100] Training Loss: 0.035, Testing Loss: 0.325, Training Acc: 0.946, Testing Acc: 0.629
+[Epoch:  46/100] Training Loss: 0.033, Testing Loss: 0.343, Training Acc: 0.950, Testing Acc: 0.645
+[Epoch:  47/100] Training Loss: 0.034, Testing Loss: 0.290, Training Acc: 0.947, Testing Acc: 0.637
+[Epoch:  48/100] Training Loss: 0.033, Testing Loss: 0.342, Training Acc: 0.947, Testing Acc: 0.646
+[Epoch:  49/100] Training Loss: 0.032, Testing Loss: 0.342, Training Acc: 0.948, Testing Acc: 0.661
+[Epoch:  50/100] Training Loss: 0.031, Testing Loss: 0.328, Training Acc: 0.950, Testing Acc: 0.652
+[Epoch:  51/100] Training Loss: 0.031, Testing Loss: 0.354, Training Acc: 0.950, Testing Acc: 0.653
+[Epoch:  52/100] Training Loss: 0.030, Testing Loss: 0.398, Training Acc: 0.952, Testing Acc: 0.644
+[Epoch:  53/100] Training Loss: 0.031, Testing Loss: 0.342, Training Acc: 0.951, Testing Acc: 0.655
+[Epoch:  54/100] Training Loss: 0.029, Testing Loss: 0.344, Training Acc: 0.955, Testing Acc: 0.646
+[Epoch:  55/100] Training Loss: 0.029, Testing Loss: 0.315, Training Acc: 0.956, Testing Acc: 0.652
+[Epoch:  56/100] Training Loss: 0.029, Testing Loss: 0.334, Training Acc: 0.954, Testing Acc: 0.689
+[Epoch:  57/100] Training Loss: 0.029, Testing Loss: 0.326, Training Acc: 0.955, Testing Acc: 0.679
+[Epoch:  58/100] Training Loss: 0.029, Testing Loss: 0.355, Training Acc: 0.955, Testing Acc: 0.681
+[Epoch:  59/100] Training Loss: 0.028, Testing Loss: 0.372, Training Acc: 0.955, Testing Acc: 0.669
+[Epoch:  60/100] Training Loss: 0.027, Testing Loss: 0.343, Training Acc: 0.957, Testing Acc: 0.673
+[Epoch:  61/100] Training Loss: 0.027, Testing Loss: 0.363, Training Acc: 0.959, Testing Acc: 0.661
+[Epoch:  62/100] Training Loss: 0.027, Testing Loss: 0.346, Training Acc: 0.957, Testing Acc: 0.695
+[Epoch:  63/100] Training Loss: 0.025, Testing Loss: 0.394, Training Acc: 0.962, Testing Acc: 0.682
+[Epoch:  64/100] Training Loss: 0.025, Testing Loss: 0.377, Training Acc: 0.963, Testing Acc: 0.687
+[Epoch:  65/100] Training Loss: 0.025, Testing Loss: 0.399, Training Acc: 0.961, Testing Acc: 0.681
+[Epoch:  66/100] Training Loss: 0.025, Testing Loss: 0.359, Training Acc: 0.961, Testing Acc: 0.705
+[Epoch:  67/100] Training Loss: 0.026, Testing Loss: 0.352, Training Acc: 0.962, Testing Acc: 0.692
+[Epoch:  68/100] Training Loss: 0.026, Testing Loss: 0.335, Training Acc: 0.960, Testing Acc: 0.694
+[Epoch:  69/100] Training Loss: 0.026, Testing Loss: 0.365, Training Acc: 0.959, Testing Acc: 0.705
+[Epoch:  70/100] Training Loss: 0.025, Testing Loss: 0.390, Training Acc: 0.963, Testing Acc: 0.685
+[Epoch:  71/100] Training Loss: 0.024, Testing Loss: 0.394, Training Acc: 0.964, Testing Acc: 0.687
+[Epoch:  72/100] Training Loss: 0.025, Testing Loss: 0.373, Training Acc: 0.965, Testing Acc: 0.696
+[Epoch:  73/100] Training Loss: 0.025, Testing Loss: 0.373, Training Acc: 0.964, Testing Acc: 0.697
+[Epoch:  74/100] Training Loss: 0.026, Testing Loss: 0.350, Training Acc: 0.960, Testing Acc: 0.685
+[Epoch:  75/100] Training Loss: 0.025, Testing Loss: 0.318, Training Acc: 0.964, Testing Acc: 0.697
+[Epoch:  76/100] Training Loss: 0.024, Testing Loss: 0.356, Training Acc: 0.966, Testing Acc: 0.696
+[Epoch:  77/100] Training Loss: 0.022, Testing Loss: 0.397, Training Acc: 0.967, Testing Acc: 0.694
+[Epoch:  78/100] Training Loss: 0.025, Testing Loss: 0.340, Training Acc: 0.964, Testing Acc: 0.675
+[Epoch:  79/100] Training Loss: 0.025, Testing Loss: 0.359, Training Acc: 0.965, Testing Acc: 0.686
+[Epoch:  80/100] Training Loss: 0.024, Testing Loss: 0.330, Training Acc: 0.966, Testing Acc: 0.687
+[Epoch:  81/100] Training Loss: 0.024, Testing Loss: 0.376, Training Acc: 0.965, Testing Acc: 0.714
+[Epoch:  82/100] Training Loss: 0.026, Testing Loss: 0.321, Training Acc: 0.962, Testing Acc: 0.668
+[Epoch:  83/100] Training Loss: 0.025, Testing Loss: 0.311, Training Acc: 0.963, Testing Acc: 0.696
+[Epoch:  84/100] Training Loss: 0.025, Testing Loss: 0.331, Training Acc: 0.965, Testing Acc: 0.702
+[Epoch:  85/100] Training Loss: 0.024, Testing Loss: 0.323, Training Acc: 0.965, Testing Acc: 0.675
+[Epoch:  86/100] Training Loss: 0.024, Testing Loss: 0.389, Training Acc: 0.963, Testing Acc: 0.677
+[Epoch:  87/100] Training Loss: 0.024, Testing Loss: 0.342, Training Acc: 0.964, Testing Acc: 0.686
+[Epoch:  88/100] Training Loss: 0.023, Testing Loss: 0.329, Training Acc: 0.966, Testing Acc: 0.681
+[Epoch:  89/100] Training Loss: 0.023, Testing Loss: 0.356, Training Acc: 0.967, Testing Acc: 0.694
+[Epoch:  90/100] Training Loss: 0.025, Testing Loss: 0.336, Training Acc: 0.963, Testing Acc: 0.680
+[Epoch:  91/100] Training Loss: 0.024, Testing Loss: 0.349, Training Acc: 0.965, Testing Acc: 0.692
+[Epoch:  92/100] Training Loss: 0.023, Testing Loss: 0.364, Training Acc: 0.967, Testing Acc: 0.681
+[Epoch:  93/100] Training Loss: 0.024, Testing Loss: 0.303, Training Acc: 0.963, Testing Acc: 0.698
+[Epoch:  94/100] Training Loss: 0.024, Testing Loss: 0.295, Training Acc: 0.965, Testing Acc: 0.689
+[Epoch:  95/100] Training Loss: 0.025, Testing Loss: 0.297, Training Acc: 0.963, Testing Acc: 0.692
+[Epoch:  96/100] Training Loss: 0.023, Testing Loss: 0.333, Training Acc: 0.967, Testing Acc: 0.705
+[Epoch:  97/100] Training Loss: 0.024, Testing Loss: 0.284, Training Acc: 0.967, Testing Acc: 0.680
+[Epoch:  98/100] Training Loss: 0.022, Testing Loss: 0.326, Training Acc: 0.969, Testing Acc: 0.701
+[Epoch:  99/100] Training Loss: 0.024, Testing Loss: 0.293, Training Acc: 0.968, Testing Acc: 0.702

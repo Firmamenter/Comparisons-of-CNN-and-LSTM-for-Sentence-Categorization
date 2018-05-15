@@ -1,0 +1,10 @@
+[Epoch:   0/ 10] Training Loss: 0.022, Training Acc: 0.503
+[Epoch:   1/ 10] Training Loss: 0.022, Training Acc: 0.511
+[Epoch:   2/ 10] Training Loss: 0.022, Training Acc: 0.514
+[Epoch:   3/ 10] Training Loss: 0.022, Training Acc: 0.519
+[Epoch:   4/ 10] Training Loss: 0.022, Training Acc: 0.518
+[Epoch:   5/ 10] Training Loss: 0.022, Training Acc: 0.526
+[Epoch:   6/ 10] Training Loss: 0.022, Training Acc: 0.527
+[Epoch:   7/ 10] Training Loss: 0.022, Training Acc: 0.528
+[Epoch:   8/ 10] Training Loss: 0.022, Training Acc: 0.535
+[Epoch:   9/ 10] Training Loss: 0.022, Training Acc: 0.535
