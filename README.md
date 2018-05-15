@@ -1,1 +1,1 @@
-# Text-Classification
+# LSTM and CNN for Sentence Categorization
