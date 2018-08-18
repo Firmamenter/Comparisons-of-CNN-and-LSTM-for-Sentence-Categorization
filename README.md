@@ -2,5 +2,5 @@ In our study, we mainly aim to compare and explore two architectures, namely, CN
 
 Results for LSTM:  
 <img src="https://github.com/Firmamenter/Comparisons-of-CNN-and-LSTM-for-Sentence-Categorization/blob/master/Train.png" width="400">
-
-![alt text](https://github.com/Firmamenter/Comparisons-of-CNN-and-LSTM-for-Sentence-Categorization/blob/master/Test.png =100x80)
+  
+<img src="https://github.com/Firmamenter/Comparisons-of-CNN-and-LSTM-for-Sentence-Categorization/blob/master/Test.png" width="400">
